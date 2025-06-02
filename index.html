@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Plataforma informativa sobre desastres naturais na América Latina. Dados em tempo real, prevenção e ajuda humanitária.">
+    <title>Alerta Latino | Desastres Naturais</title>
+    <!-- Fontes do Google (exemplo) -->
+    <link href="assets/style.css" rel="stylesheet">
+    <!-- Ícones (exemplo) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- HEADER (compartilhado em todas as páginas) -->
+    <header class="cabecalho">
+        <nav class="menu" aria-label="Navegação principal">
+            <a href="index.html">Home</a>
+            <a href="solucao.html">Solução</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contato.html">Contato</a>
+            <a href="integrantes.html">Integrantes</a>
+        </nav>
+        <div class="busca" role="search">
+            <input type="text" placeholder="Buscar desastres..." aria-label="Barra de pesquisa">
+            <button aria-label="Pesquisar"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <section class="hero" aria-labelledby="titulo-hero">
+            <h1 id="titulo-hero">Desastres Naturais na América Latina</h1>
+            <p>Dados em tempo real, prevenção e ajuda humanitária.</p>
+            <a href="#alertas" class="botao">Ver Alertas Atuais</a>
+        </section>
+
+        <section class="alertas" id="alertas" aria-labelledby="titulo-alertas">
+            <h2 id="titulo-alertas">Alertas Recentes</h2>
+            <div class="grid-alertas">
+                <article class="alerta-card" aria-labelledby="alerta-1">
+                    <img src="./assets/IMG/enchentes-no-sul-do-brasil-do-negacionismo-climatico-a-cidades-resilientes_4.jpg"
+                        alt="Enchente em região urbana" class="alerta-imagem">
+                    <h3 id="alerta-1">Enchentes no Brasil</h3>
+                    <p>Áreas afetadas: Sul e Sudeste. Saiba como se preparar.</p>
+                    <a href="#" aria-label="Leia mais sobre enchentes">Leia mais</a>
+                </article>
+                <article class="alerta-card" aria-labelledby="alerta-2">
+                    <img src="imagens/terremoto.jpg" alt="Prédios danificados por terremoto" class="alerta-imagem">
+                    <h3 id="alerta-2">Terremoto no Chile</h3>
+                    <p>Magnitude 6.7. Atualizações em tempo real.</p>
+                    <a href="#" aria-label="Leia mais sobre terremoto">Leia mais</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="webchat" aria-labelledby="titulo-webchat">
+            <h2 id="titulo-webchat">Tire suas dúvidas</h2>
+            <div class="chat-container">
+                <iframe src="webchat.html" title="Webchat de suporte" aria-label="Chat interativo"></iframe>
+            </div>
+        </section>
+
+        <aside class="doacoes" aria-labelledby="titulo-doacoes">
+            <h2 id="titulo-doacoes">Apoie as vítimas</h2>
+            <p>Contribua com ONGs locais:</p>
+            <button class="botao-doar" aria-label="Doar para ajuda humanitária">Doar Agora</button>
+        </aside>
+    </main>
+
+    <!-- FOOTER (compartilhado em todas as páginas) -->
+    <footer class="rodape">
+        <p>© 2024 Alerta Latino. Todos os direitos reservados.</p>
+        <nav aria-label="Links institucionais">
+            <a href="politica.html">Política de Privacidade</a>
+            <a href="termos.html">Termos de Uso</a>
+        </nav>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
