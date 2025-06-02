@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solução tecnológica para monitoramento de desastres naturais na América Latina">
+    <title>Solução | Alerta Latino</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsivo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER COMPARTILHADO -->
+    <header class="cabecalho">
+        <nav class="menu" aria-label="Navegação principal">
+            <a href="index.html">Home</a>
+            <a href="solucao.html" aria-current="page">Solução</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contato.html">Contato</a>
+            <a href="integrantes.html">Integrantes</a>
+        </nav>
+        <div class="busca" role="search">
+            <input type="text" placeholder="Buscar na solução..." aria-label="Barra de pesquisa">
+            <button aria-label="Pesquisar"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="pagina-solucao">
+        <h1>Nossa Solução Tecnológica</h1>
+        
+        <section class="destaque-solucao" aria-labelledby="destaque">
+            <div class="video-demo">
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/EXEMPLO" 
+                    title="Demonstração da plataforma Alerta Latino" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                    aria-label="Vídeo demonstrativo">
+                </iframe>
+            </div>
+            <p id="destaque">Uma plataforma integrada para <strong>monitoramento em tempo real</strong>, <strong>prevenção</strong> e <strong>resposta rápida</strong> a desastres naturais.</p>
+        </section>
+
+        <section class="recursos" aria-labelledby="recursos-titulo">
+            <h2 id="recursos-titulo">Principais Recursos</h2>
+            
+            <div class="grid-recursos">
+                <!-- Recurso 1 -->
+                <article class="recurso-card">
+                    <i class="fas fa-bell" aria-hidden="true"></i>
+                    <h3>Alertas em Tempo Real</h3>
+                    <p>Notificações instantâneas via e-mail/SMS quando novos desastres são detectados em sua região.</p>
+                </article>
+                
+                <!-- Recurso 2 -->
+                <article class="recurso-card">
+                    <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+                    <h3>Mapa Interativo</h3>
+                    <p>Visualização geográfica de riscos ativos com camadas personalizáveis.</p>
+                </article>
+                
+                <!-- Recurso 3 -->
+                <article class="recurso-card">
+                    <i class="fas fa-robot" aria-hidden="true"></i>
+                    <h3>Chatbot de Emergência</h3>
+                    <p>Assistente virtual 24/7 para orientações específicas sobre cada tipo de desastre.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="tecnologias" aria-labelledby="tecnologias-titulo">
+            <h2 id="tecnologias-titulo">Tecnologias Utilizadas</h2>
+            <ul class="lista-tecnologias">
+                <li><strong>API de Dados:</strong> Integração com INMET (Brasil), USGS (Terremotos) e NOAA (Furacões)</li>
+                <li><strong>Front-end:</strong> HTML5 Semântico, CSS3 Flexbox/Grid, JavaScript ES6+</li>
+                <li><strong>Back-end:</strong> Node.js para processamento de alertas</li>
+                <li><strong>Banco de Dados:</strong> MongoDB para registro histórico de eventos</li>
+            </ul>
+        </section>
+
+        <section class="cta-solucao">
+            <h2>Pronto para testar nossa solução?</h2>
+            <a href="contato.html" class="botao-cta">Solicitar Demonstração</a>
+        </section>
+    </main>
+
+    <!-- FOOTER COMPARTILHADO -->
+    <footer class="rodape">
+        <p>© 2024 Alerta Latino. Todos os direitos reservados.</p>
+        <nav aria-label="Links institucionais">
+            <a href="politica.html">Política de Privacidade</a>
+            <a href="termos.html">Termos de Uso</a>
+        </nav>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
