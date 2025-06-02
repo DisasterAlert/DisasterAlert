@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perguntas frequentes sobre desastres naturais na América Latina">
+    <title>FAQ | Alerta Latino</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsivo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER COMPARTILHADO -->
+    <header class="cabecalho">
+        <nav class="menu" aria-label="Navegação principal">
+            <a href="index.html">Home</a>
+            <a href="solucao.html">Solução</a>
+            <a href="faq.html" aria-current="page">FAQ</a>
+            <a href="contato.html">Contato</a>
+            <a href="integrantes.html">Integrantes</a>
+        </nav>
+        <div class="busca" role="search">
+            <input type="text" placeholder="Buscar no FAQ..." aria-label="Barra de pesquisa">
+            <button aria-label="Pesquisar"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="pagina-faq">
+        <h1>Perguntas Frequentes</h1>
+        
+        <section class="intro-faq" aria-labelledby="intro-faq">
+            <p id="intro-faq">Encontre respostas para as dúvidas mais comuns sobre desastres naturais e nossa plataforma.</p>
+        </section>
+
+        <div class="faq-categorias">
+            <button class="botao-categoria active" data-categoria="todos">Todos</button>
+            <button class="botao-categoria" data-categoria="desastres">Desastres</button>
+            <button class="botao-categoria" data-categoria="plataforma">Plataforma</button>
+            <button class="botao-categoria" data-categoria="doacoes">Doações</button>
+        </div>
+
+        <section class="lista-faq" aria-labelledby="lista-perguntas">
+            <h2 id="lista-perguntas" class="sr-only">Lista de Perguntas</h2>
+            
+            <!-- FAQ Item 1 -->
+            <article class="faq-item" data-categoria="desastres">
+                <button class="faq-pergunta" aria-expanded="false" aria-controls="resposta1">
+                    <span>Quais são os desastres mais comuns na América Latina?</span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-resposta" id="resposta1" hidden>
+                    <p>Os principais desastres na região incluem enchentes (especialmente no Brasil e Colômbia), terremotos (Chile, Peru e México), secas (Nordeste brasileiro) e furacões (Caribe e América Central).</p>
+                </div>
+            </article>
+            
+            <!-- FAQ Item 2 -->
+            <article class="faq-item" data-categoria="plataforma">
+                <button class="faq-pergunta" aria-expanded="false" aria-controls="resposta2">
+                    <span>Como a plataforma obtém dados em tempo real?</span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-resposta" id="resposta2" hidden>
+                    <p>Integramos APIs de órgãos oficiais como o <strong>INMET (Brasil)</strong>, <strong>USGS (terremotos)</strong> e <strong>NOAA (furacões)</strong>, além de parcerias com agências de notícias locais.</p>
+                </div>
+            </article>
+            
+            <!-- FAQ Item 3 -->
+            <article class="faq-item" data-categoria="doacoes">
+                <button class="faq-pergunta" aria-expanded="false" aria-controls="resposta3">
+                    <span>Como as doações são distribuídas?</span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-resposta" id="resposta3" hidden>
+                    <p>Trabalhamos com ONGs locais para garantir que 100% dos recursos cheguem às comunidades afetadas. Relatórios trimestrais são publicados em nossa página de transparência.</p>
+                </div>
+            </article>
+            
+            <!-- Adicione mais itens seguindo o mesmo padrão -->
+        </section>
+
+        <section class="faq-extra" aria-labelledby="duvidas-restantes">
+            <h2 id="duvidas-restantes">Ainda com dúvidas?</h2>
+            <p>Entre em contato conosco através da nossa <a href="contato.html">página de contato</a>.</p>
+        </section>
+    </main>
+
+    <!-- FOOTER COMPARTILHADO -->
+    <footer class="rodape">
+        <p>© 2024 Alerta Latino. Todos os direitos reservados.</p>
+        <nav aria-label="Links institucionais">
+            <a href="politica.html">Política de Privacidade</a>
+            <a href="termos.html">Termos de Uso</a>
+        </nav>
+    </footer>
+
+    <script src="assets/js/faq.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
