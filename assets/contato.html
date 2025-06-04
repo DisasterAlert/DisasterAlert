@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - DisasterAlert</title>
     <meta name="description" content="Entre em contato com a equipe do DisasterAlert">
-    <link rel="stylesheet" href="/assets/CSS/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -22,8 +22,8 @@
                 </button>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="../index.html" class="nav-link">Início</a></li>
-                    <li><a href="./solucao.html" class="nav-link">Soluções</a></li>
-                    <li><a href="./faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="solucoes.html" class="nav-link">Soluções</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
                     <li><a href="contato.html" class="nav-link active">Contato</a></li>
                     <li><a href="integrantes.html" class="nav-link">Integrantes</a></li>
                 </ul>
@@ -132,6 +132,33 @@
                 <div class="footer-col">
                     <h3 class="footer-title">Links Rápidos</h3>
                     <ul class="footer-links">
-                        <li class="footer-link"><a href="index.html">Início</a></li>
-                        <li class="footer-link"><a href="solucoes.html">Soluções</a></li>
-                        <li class="footer-link"><a href="fa
+                        <li class="footer-link"><a href="../index.html">Início</a></li>
+                        <li class="footer-link"><a href="./solucao.html">Soluções</a></li>
+                        <li class="footer-link"><a href="./faq.html">FAQ</a></li>
+                        <li class="footer-link"><a href="./contato.html">Contato</a></li>
+                        <li class="footer-link"><a href="./integrantes.html">Integrantes</a></li>   
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Contato</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="mailto:contato@disasteralert.com"><i class="fas fa-envelope"></i> contato@disasteralert.com</a></li>
+                        <li class="footer-link"><a href="tel:+551199999999"><i class="fas fa-phone"></i> +55 11 9999-9999</a></li>
+                        <li class="footer-link"><a href="#"><i class="fas fa-map-marker-alt"></i> São Paulo, Brasil</a></li>
+                    </ul>
+                </div>
+                <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "b5307c92-a6ac-4f75-a546-ac82f00afbf2", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "d955642f-dde2-4260-9411-a5c41710b306", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+            </body>
