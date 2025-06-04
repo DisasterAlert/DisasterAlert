@@ -1,85 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Plataforma informativa sobre desastres naturais na América Latina. Dados em tempo real, prevenção e ajuda humanitária.">
-    <title>Alerta Latino | Desastres Naturais</title>
-    <!-- Fontes do Google (exemplo) -->
-    <link href="assets/style.css" rel="stylesheet">
-    <!-- Ícones (exemplo) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>DisasterAlert - Monitoramento de Desastres na América Latina</title>
+    <meta name="description" content="Sistema de alerta e informações sobre desastres naturais na América Latina">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-    <!-- HEADER (compartilhado em todas as páginas) -->
-    <header class="cabecalho">
-        <nav class="menu" aria-label="Navegação principal">
-            <a href="index.html">Home</a>
-            <a href="solucao.html">Solução</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contato.html">Contato</a>
-            <a href="integrantes.html">Integrantes</a>
-        </nav>
-        <div class="busca" role="search">
-            <input type="text" placeholder="Buscar desastres..." aria-label="Barra de pesquisa">
-            <button aria-label="Pesquisar"><i class="fas fa-search"></i></button>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon"><i class="fas fa-fire"></i></span>
+                    <span class="logo-text">DisasterAlert</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link active">Início</a></li>
+                    <li><a href="solucoes.html" class="nav-link">Soluções</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li><a href="integrantes.html" class="nav-link">Integrantes</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main>
-        <section class="hero" aria-labelledby="titulo-hero">
-            <h1 id="titulo-hero">Desastres Naturais na América Latina</h1>
-            <p>Dados em tempo real, prevenção e ajuda humanitária.</p>
-            <a href="#alertas" class="botao">Ver Alertas Atuais</a>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Monitoramento de Desastres na América Latina</h1>
+                <p class="hero-subtitle">Alertas em tempo real e informações cruciais para prevenção e resposta a desastres naturais</p>
+                <div class="cta-buttons">
+                    <a href="solucoes.html" class="btn btn-primary">Ver Soluções</a>
+                    <a href="#ultimos-desastres" class="btn btn-outline">Últimos Alertas</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section class="alertas" id="alertas" aria-labelledby="titulo-alertas">
-            <h2 id="titulo-alertas">Alertas Recentes</h2>
-            <div class="grid-alertas">
-                <article class="alerta-card" aria-labelledby="alerta-1">
-                    <img src="./assets/IMG/enchentes-no-sul-do-brasil-do-negacionismo-climatico-a-cidades-resilientes_4.jpg"
-                        alt="Enchente em região urbana" class="alerta-imagem">
-                    <h3 id="alerta-1">Enchentes no Brasil</h3>
-                    <p>Áreas afetadas: Sul e Sudeste. Saiba como se preparar.</p>
-                    <a href="#" aria-label="Leia mais sobre enchentes">Leia mais</a>
+    <!-- Últimos Desastres -->
+    <section class="section" id="ultimos-desastres">
+        <div class="container">
+            <h2 class="section-title">Últimos Desastres Registrados</h2>
+            <div class="disaster-grid">
+                <!-- Desastre 1 -->
+                <article class="disaster-card">
+                    <div class="disaster-img">
+                        <img src="https://images.unsplash.com/photo-1518593929011-2d260d1e0424" alt="Enchente em região urbana">
+                    </div>
+                    <div class="disaster-content">
+                        <span class="disaster-type">Enchente</span>
+                        <h3 class="disaster-title">Enchentes no Sul do Brasil</h3>
+                        <p>Regiões afetadas: Santa Catarina e Rio Grande do Sul. Mais de 50.000 pessoas desalojadas.</p>
+                        <a href="#" class="btn btn-outline" style="margin-top: 1rem;">Ver Detalhes</a>
+                    </div>
                 </article>
-                <article class="alerta-card" aria-labelledby="alerta-2">
-                    <img src="imagens/terremoto.jpg" alt="Prédios danificados por terremoto" class="alerta-imagem">
-                    <h3 id="alerta-2">Terremoto no Chile</h3>
-                    <p>Magnitude 6.7. Atualizações em tempo real.</p>
-                    <a href="#" aria-label="Leia mais sobre terremoto">Leia mais</a>
+
+                <!-- Desastre 2 -->
+                <article class="disaster-card">
+                    <div class="disaster-img">
+                        <img src="https://images.unsplash.com/photo-1506259091721-347018c3e1c2" alt="Terremoto em cidade">
+                    </div>
+                    <div class="disaster-content">
+                        <span class="disaster-type">Terremoto</span>
+                        <h3 class="disaster-title">Terremoto no Chile</h3>
+                        <p>Magnitude 6.7 na escala Richter. Epicentro a 50km de Santiago. Sem vítimas fatais registradas.</p>
+                        <a href="#" class="btn btn-outline" style="margin-top: 1rem;">Ver Detalhes</a>
+                    </div>
+                </article>
+
+                <!-- Desastre 3 -->
+                <article class="disaster-card">
+                    <div class="disaster-img">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef" alt="Tempestade tropical">
+                    </div>
+                    <div class="disaster-content">
+                        <span class="disaster-type">Tempestade Tropical</span>
+                        <h3 class="disaster-title">Tempestade no Caribe</h3>
+                        <p>Tempestade tropical atinge costa da Colômbia e Venezuela. Ventos de até 100km/h.</p>
+                        <a href="#" class="btn btn-outline" style="margin-top: 1rem;">Ver Detalhes</a>
+                    </div>
                 </article>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="webchat" aria-labelledby="titulo-webchat">
-            <h2 id="titulo-webchat">Tire suas dúvidas</h2>
-            <div class="chat-container">
-                <iframe src="webchat.html" title="Webchat de suporte" aria-label="Chat interativo"></iframe>
+    <!-- Estatísticas -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Estatísticas Recentes</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>+1.200</h3>
+                    <p>Desastres monitorados</p>
+                </div>
+                <div class="stat-item">
+                    <h3>18</h3>
+                    <p>Países cobertos</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Monitoramento ativo</p>
+                </div>
+                <div class="stat-item">
+                    <h3>+500k</h3>
+                    <p>Pessoas impactadas</p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <aside class="doacoes" aria-labelledby="titulo-doacoes">
-            <h2 id="titulo-doacoes">Apoie as vítimas</h2>
-            <p>Contribua com ONGs locais:</p>
-            <button class="botao-doar" aria-label="Doar para ajuda humanitária">Doar Agora</button>
-        </aside>
-    </main>
-
-    <!-- FOOTER (compartilhado em todas as páginas) -->
-    <footer class="rodape">
-        <p>© 2024 Alerta Latino. Todos os direitos reservados.</p>
-        <nav aria-label="Links institucionais">
-            <a href="politica.html">Política de Privacidade</a>
-            <a href="termos.html">Termos de Uso</a>
-        </nav>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo">
+                            <span class="logo-icon"><i class="fas fa-fire"></i></span>
+                            <span class="logo-text">DisasterAlert</span>
+                        </a>
+                    </div>
+                    <p>Monitoramento e alerta de desastres naturais na América Latina. Fornecendo informações cruciais para salvar vidas.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="index.html">Início</a></li>
+                        <li class="footer-link"><a href="solucoes.html">Soluções</a></li>
+                        <li class="footer-link"><a href="faq.html">FAQ</a></li>
+                        <li class="footer-link"><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Contato</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="mailto:contato@disasteralert.com"><i class="fas fa-envelope"></i> contato@disasteralert.com</a></li>
+                        <li class="footer-link"><a href="tel:+551199999999"><i class="fas fa-phone"></i> +55 11 9999-9999</a></li>
+                        <li class="footer-link"><a href="#"><i class="fas fa-map-marker-alt"></i> São Paulo, Brasil</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 DisasterAlert. Todos os direitos reservados.</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Emergency Alert -->
+    <div class="emergency-alert" id="emergencyAlert">
+        <i class="fas fa-exclamation-triangle"></i>
+        <span>Alerta Ativo: Enchentes no Sul do Brasil</span>
+        <button class="close-btn" id="closeAlertBtn">&times;</button>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
-
 </html>
