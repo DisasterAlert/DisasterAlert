@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluções - DisasterAlert</title>
+    <meta name="description" content="Soluções e medidas preventivas para diferentes tipos de desastres naturais">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon"><i class="fas fa-fire"></i></span>
+                    <span class="logo-text">DisasterAlert</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../index.html" class="nav-link">Início</a></li>
+                    <li><a href="./solucao.html" class="nav-link active">Soluções</a></li>
+                    <li><a href="./faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="./contato.html" class="nav-link">Contato</a></li>
+                    <li><a href="./integrantes.html" class="nav-link">Integrantes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(59, 43, 43, 0.7), rgba(35, 27, 27, 0.9)), url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d'); min-height: 60vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Soluções para Desastres</h1>
+                <p class="hero-subtitle">Medidas preventivas e ações para diferentes tipos de desastres naturais</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Encontre Soluções por Tipo de Desastre</h2>
+            <p class="section-subtitle" style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Selecione o tipo de desastre para ver as medidas preventivas e ações recomendadas</p>
+            
+            <div class="solutions-tabs" id="disasterTabs">
+                <button class="tab-btn active" data-tab="floods">Enchentes</button>
+                <button class="tab-btn" data-tab="earthquakes">Terremotos</button>
+                <button class="tab-btn" data-tab="landslides">Deslizamentos</button>
+                <button class="tab-btn" data-tab="fires">Incêndios</button>
+                <button class="tab-btn" data-tab="storms">Tempestades</button>
+            </div>
+
+            <!-- Floods Solutions -->
+            <div class="solution-content active" id="floods">
+                <article class="solution-item">
+                    <h3>Antes da Enchente</h3>
+                    <ul>
+                        <li>Conheça as áreas de risco de enchente na sua região</li>
+                        <li>Tenha um plano de evacuação e um local seguro para ir</li>
+                        <li>Prepare um kit de emergência com água, comida, remédios e documentos importantes</li>
+                        <li>Proteja equipamentos elétricos e objetos de valor em locais elevados</li>
+                    </ul>
+                </article>
+
+                <article class="solution-item">
+                    <h3>Durante a Enchente</h3>
+                    <ul>
+                        <li>Desligue a energia elétrica e o gás se a água começar a entrar em casa</li>
+                        <li>Evite contato com a água da enchente que pode estar contaminada</li>
+                        <li>Não tente atravessar ruas ou pontes alagadas a pé ou de carro</li>
+                        <li>Siga para locais elevados e espere por ajuda se necessário</li>
+                    </ul>
+                </article>
+
+                <article class="solution-item">
+                    <h3>Depois da Enchente</h3>
+                    <ul>
+                        <li>Volte para casa apenas quando as autoridades indicarem que é seguro</li>
+                        <li>Verifique se há danos estruturais antes de entrar</li>
+                        <li>Descartar alimentos que tiveram contato com a água da enchente</li>
+                        <li>Limpe e desinfete a casa para evitar doenças</li>
+                    </ul>
+                </article>
+            </div>
+
+            <!-- Earthquakes Solutions -->
+            <div class="solution-content" id="earthquakes">
+                <article class="solution-item">
+                    <h3>Antes do Terremoto</h3>
+                    <ul>
+                        <li>Identifique locais seguros em cada cômodo (sob móveis resistentes, contra paredes internas)</li>
+                        <li>Prepare um kit de emergência com água, comida, lanternas e remédios para pelo menos 3 dias</li>
+                        <li>Fixe móveis e objetos pesados que possam cair</li>
+                        <li>Conheça os pontos de desligamento de gás, água e eletricidade</li>
+                    </ul>
+                </article>
+
+                <article class="solution-item">
+                    <h3>Durante o Terremoto</h3>
+                    <ul>
+                        <li>Se estiver dentro de casa, fique lá - não corra para fora</li>
+                        <li>Proteja-se sob uma mesa resistente ou próximo a uma parede interna</li>
+                        <li>Se estiver na rua, afaste-se de edifícios, postes e fios elétricos</li>
+                        <li>Se estiver dirigindo, pare o carro em local seguro e fique dentro dele</li>
+                    </ul>
+                </article>
+
+                <article class="solution-item">
+                    <h3>Depois do Terremoto</h3>
+                    <ul>
+                        <li>Verifique se há feridos e preste primeiros socoros se necessário</li>
+                        <li>Verifique vazamentos de gás e desligue o abastecimento se detectar vazamento</li>
+                        <li>Não use fósforos ou isqueiros devido ao risco de explosão</li>
+                        <li>Esteja preparado para réplicas que podem ocorrer após o tremor principal</li>
+                    </ul>
+                </article>
+            </div>
+
+            <!-- Landslides Solutions -->
+            <div class="solution-content" id="landslides">
+                <article class="solution-item">
+                    <h3>Prevenção de Deslizamentos</h3>
+                    <ul>
+                        <li>Evite construir ou morar em encostas íngremes</li>
+                        <li>Mantenha a vegetação nativa em encostas - não desmate</li>
+                        <li>Construa sistemas de drenagem adequados para escoamento da água</li>
+                        <li>Fique atento a sinais como rachaduras no solo, inclinação de árvores ou postes</li>
+                    </ul>
+                </article>
+
+                <article class="solution-item">
+                    <h3>Durante um Deslizamento</h3>
+                    <ul>
+                        <li>Se perceber sinais de deslizamento iminente, evacue imediatamente</li>
+                        <li>Procure abrigo em locais altos e estáveis</li>
+                        <li>Não tente resgatar pertences - priorize sua segurança</li>
+                        <li>Avise vizinhos e autoridades sobre o perigo iminente</li>
+                    </ul>
+                </article>
+
+                <article class="solution-item">
+                    <h3>Após um Deslizamento</h3>
+                    <ul>
+                        <li>Não retorne ao local até que seja considerado seguro por autoridades</li>
+                        <li>Ajudar na busca por vítimas apenas se houver segurança e orientação</li>
+                        <li>Documente os danos para fins de seguro e assistência governamental</li>
+                        <li>Participe de programas de reassentamento se sua área for considerada de risco permanente</li>
+                    </ul>
+                </article>
+            </div>
+
+            <!-- Fires Solutions -->
+            <div class="solution-content" id="fires">
+                <article class="solution-item">
+                    <h3>Prevenção de Incêndios</h3>
+                    <ul>
+                        <li>Mantenha uma faixa limpa ao redor de propriedades em áreas florestais</li>
+                        <li>Armazene materiais inflamáveis longe de fontes de calor</li>
+                        <li>Instale detectores de fumaça e mantenha extintores em locais acessíveis</li>
+                        <li>Tenha um plano de evacuação e pontos de encontro familiares</li>
+                    </ul>
+                </article>
+
+                <article class="solution-item">
+                    <h3>Durante um Incêndio</h3>
+                    <ul>
+                        <li>Evacue imediatamente se o fogo estiver próximo</li>
+                        <li>Cubra nariz e boca com pano úmido para respirar</li>
+                        <li>Se preso, procure um local com pouca vegetação e fique deitado no chão</li>
+                        <li>Não tente combater incêndios grandes sem equipamento e treinamento adequado</li>
+                    </ul>
+                </article>
+
+                <article class="solution-item">
+                    <h3>Após um Incêndio</h3>
+                    <ul>
+                        <li>Retorne apenas quando as autoridades declararem a área segura</li>
+                        <li>Verifique se há focos de fogo remanescentes e pontos quentes</li>
+                        <li>Tenha cuidado com árvores enfraquecidas que podem cair</li>
+                        <li>Participe de esforços de reflorestamento para prevenir erosão</li>
+                    </ul>
+                </article>
+            </div>
+
+            <!-- Storms Solutions -->
+            <div class="solution-content" id="storms">
+                <article class="solution-item">
+                    <h3>Preparação para Tempestades</h3>
+                    <ul>
+                        <li>Proteja janelas com persianas ou tábuas de madeira</li>
+                        <li>Guarde objetos externos que possam ser levados pelo vento</li>
+                        <li>Tenha um kit de emergência com água, comida não perecível e medicamentos</li>
+                        <li>Conheça a rota de evacuação e abrigos locais</li>
+                    </ul>
+                </article>
+
+                <article class="solution-item">
+                    <h3>Durante a Tempestade</h3>
+                    <ul>
+                        <li>Fique em casa, de preferência em um cômodo interno sem janelas</li>
+                        <li>Desconecte aparelhos elétricos para proteger contra surtos</li>
+                        <li>Evite usar telefone fixo ou celular durante tempestades com raios</li>
+                        <li>Se estiver ao ar livre, procure abrigo em edifício sólido</li>
+                    </ul>
+                </article>
+
+                <article class="solution-item">
+                    <h3>Após a Tempestade</h3>
+                    <ul>
+                        <li>Tenha cuidado com fios elétricos caídos e estruturas danificadas</li>
+                        <li>Ferva água se houver suspeita de contaminação</li>
+                        <li>Documente danos para fins de seguro</li>
+                        <li>Participe de mutirões de limpeza e reconstrução da comunidade</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contacts -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Contatos de Emergência</h2>
+            <div class="emergency-contacts" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                <div class="emergency-item" style="background: var(--bg-dark-2); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--red-alert);">
+                    <h3 style="color: var(--red-alert); margin-bottom: 0.5rem;">Defesa Civil</h3>
+                    <p style="margin-bottom: 0.5rem;">199 (telefone gratuito)</p>
+                    <a href="#" style="color: var(--text-muted); font-size: 0.9rem;">www.defesacivil.gov.br</a>
+                </div>
+                <div class="emergency-item" style="background: var(--bg-dark-2); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--red-alert);">
+                    <h3 style="color: var(--red-alert); margin-bottom: 0.5rem;">Bombeiros</h3>
+                    <p style="margin-bottom: 0.5rem;">193 (telefone gratuito)</p>
+                    <a href="#" style="color: var(--text-muted); font-size: 0.9rem;">www.bombeiros.gov.br</a>
+                </div>
+                <div class="emergency-item" style="background: var(--bg-dark-2); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--red-alert);">
+                    <h3 style="color: var(--red-alert); margin-bottom: 0.5rem;">SAMU</h3>
+                    <p style="margin-bottom: 0.5rem;">192 (telefone gratuito)</p>
+                    <a href="#" style="color: var(--text-muted); font-size: 0.9rem;">www.saude.gov.br/samu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo">
+                            <span class="logo-icon"><i class="fas fa-fire"></i></span>
+                            <span class="logo-text">DisasterAlert</span>
+                        </a>
+                    </div>
+                    <p>Monitoramento e alerta de desastres naturais na América Latina. Fornecendo informações cruciais para salvar vidas.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="index.html">Início</a></li>
+                        <li class="footer-link"><a href="./solucao.html">Soluções</a></li>
+                        <li class="footer-link"><a href="./faq.html">FAQ</a></li>
+                        <li class="footer-link"><a href="./contato.html">Contato</a></li>
+                        <li class="footer-link"><a href="./integrantes.html">Integrantes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Contato</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="mailto:contato@disasteralert.com"><i class="fas fa-envelope"></i> contato@disasteralert.com</a></li>
+                        <li class="footer-link"><a href="tel:+551199999999"><i class="fas fa-phone"></i> +55 11 9999-9999</a></li>
+                        <li class="footer-link"><a href="#"><i class="fas fa-map-marker-alt"></i> São Paulo, Brasil</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DisasterAlert. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
