@@ -6,7 +6,7 @@
     <title>Soluções - DisasterAlert</title>
     <meta name="description" content="Soluções e medidas preventivas para diferentes tipos de desastres naturais">
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com//libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -283,6 +283,19 @@
             </div>
         </div>
     </footer>
+    <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "b5307c92-a6ac-4f75-a546-ac82f00afbf2", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "d955642f-dde2-4260-9411-a5c41710b306", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
 
     <script src="js/script.js"></script>
 </body>
