@@ -1,3 +1,5 @@
+<img src='https://capsule-render.vercel.app/api?type=waving&color=963532&height=120&section=header' width='100%'/>
+
 # DisasterAlert 🌍🚨
 
 Sistema de monitoramento e alerta de desastres naturais na América Latina, fornecendo informações cruciais e soluções para diferentes tipos de emergências.
@@ -68,3 +70,5 @@ Commit suas mudanças (```git commit -m 'Add some AmazingFeature```')
 Push para a branch (```git push origin feature/AmazingFeature```)
 
 Abra um Pull Request
+
+<img src='https://capsule-render.vercel.app/api?type=waving&color=963532&height=120&section=header' width='100%'/>
